@@ -29,29 +29,7 @@ void setup() {
   buzzerOn(); 
   delay(1000);
   buzzerOff();
-  delay(1000);
-
-  // Motor Test
-  //Forward test
-  motor1.run(-100);
-  motor2.run(100);
-  delay(1000);
-  motor1.stop();
-  motor2.stop();
-  delay(500);
-
-  //Reverse Test
-  motor1.run(100);
-  motor2.run(-100);
-  delay(1000);
-  motor1.stop();
-  motor2.stop();
-
-   // Finish Testing
-   buzzerOn();
-   delay(500);
-   buzzerOff();
-   delay(2000);
+  delay(2000);
 }
 
 void loop() {
