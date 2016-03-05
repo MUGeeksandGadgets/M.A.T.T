@@ -1,7 +1,7 @@
 /*
  * Author: Patrick Shinn
  * Version: 1.5
- * Date: 12/23/15
+ * Date: 3/05/16
  * Vehicle: M.A.T.T
  * -------------------------------------------------------------
  * # Mechanical Autonomous Treaded Tank
@@ -57,8 +57,9 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
 
-  // If the top sensor is within 15 cm of an object or the bottom sensor is within 30 cm of an object, stop and turn left
-  if((ultraSensor.distanceCm() < 20 && ultraSensor.distanceCm() > 0) || (ultraSensor1.distanceCm() < 30 && ultraSensor1.distanceCm() > 0)){
+  // If either sesnor picks up an object within 15 cm, stop and turn left. Then check for another obstacle.
+  if((ultraSensor.distanceCm() < 15 && ultraSensor.distanceCm() > 0) || (ultraSensor1.distanceCm() < 15 && ultraSensor1.distanceCm() > 0))
+  {
       motor1.stop();
       motor2.stop();
       delay(500);
