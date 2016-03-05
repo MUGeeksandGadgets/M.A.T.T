@@ -5,3 +5,5 @@ https://codeload.github.com/Makeblock-official/Makeblock-Libraries/zip/master
 
 It is asked that any changes you make or improvements you add be emailed to Patrick Shinn at shinn16@marshall.edu so they
 can be applied to M.A.T.T and reshared with others interested in the project.
+
+Marshall Geeks and Gadgets 2016
